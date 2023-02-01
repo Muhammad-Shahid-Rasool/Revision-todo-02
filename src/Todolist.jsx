@@ -11,6 +11,7 @@ const Todolist = ({list,remove}) => {
 
               <button
                 className="delete-button"
+               
                 onClick={() => {
                   remove(entry);
                 }}
@@ -18,8 +19,10 @@ const Todolist = ({list,remove}) => {
                 Delete
               
               </button>
+              <button type="submit">Edit</button>
               
             </div>
+           
           ))}
         </ul>
       ) : (
